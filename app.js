@@ -5,7 +5,7 @@ const bodyparser =require("body-parser");
 const app = express();
 app.use(express.json());
 
-mongoose.connect("mongodb+srv://vivek:vivek0404@cluster0.swrbp.mongodb.net/sampleproduct").then(()=>{
+mongoose.connect("mongodb+srv://vivek:admin@cluster0.swrbp.mongodb.net/sampleproduct").then(()=>{
     console.log("mongoose running");
 }).catch((err)=>{
     console.log(err);
